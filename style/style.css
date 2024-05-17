@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+body{
+    font-family: "Orbitron", sans-serif;
+    overflow: hidden;
+    background: conic-gradient(from 90deg at bottom right, cyan, rebeccapurple);
+}
+.container{
+    border: 1px solid #000000;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digitalClock{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: rgba(red, green, blue, alpha) (0, 0, 0, 0.1);
+}
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-widith:768px){
+    #bar1, #bar2{
+        display: none;
+    }
+
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+
+    .digitalClock h1{
+        display: block;
+    }
+}
+
+@media(max-widith: 480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
